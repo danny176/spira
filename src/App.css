@@ -1,0 +1,256 @@
+* {
+  margin: 0px 0px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "RobotoFlex";
+  src: url("./fonts/RobotFlex.ttf") format("truetype");
+  font-weight: 100 1000;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SwearTextMedium";
+  src: url("./fonts/SwearTextMedium.otf") format("opentype");
+  font-weight: 100 1000;
+  font-style: normal;
+}
+
+.navBarVisible {
+  transform: translateY(0);
+}
+
+.navBarHidden {
+  transform: translateY(-150%);
+}
+
+@media screen and (min-width: 501px) {
+  body {
+    font-family: "RobotoFlex";
+    margin: 0px 64px;
+    color: white;
+    background-color: black;
+  }
+
+  .headertext {
+    margin: 100vh 0px;
+  }
+
+  .h1test {
+    margin-top: 150vh;
+  }
+
+  footer h2 {
+    font-family: "SwearTextMedium";
+    font-size: 25vw;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    padding: 0px 64px;
+    width: 100%;
+  }
+
+  .logocontainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .socials {
+    display: flex;
+    gap: 15px;
+  }
+
+  .copysocials {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+  .kontaktknap a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+  }
+
+  .kontaktknap {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: #d1e2c0;
+    border-radius: 20px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  }
+
+  .kontaktknap img {
+    display: block;
+    width: 8px;
+    height: auto;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .kontaktknap:hover {
+    background-color: #e2f7ce;
+  }
+
+  .kontaktknap:hover img {
+    transform: translateX(5px);
+  }
+
+  header {
+    width: 100%;
+    height: 125px;
+  }
+
+  nav {
+    margin-top: 20px;
+    transition: transform 0.2s ease-out;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 128px);
+    top: 0;
+    z-index: 1000;
+  }
+
+  header img {
+    width: 60px;
+    height: auto;
+  }
+
+  .navbar {
+    border: 1px solid #a6a3a3;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 100px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+
+  .navbar p {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .navbar a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .navbar .cursor {
+    position: absolute;
+    height: calc(100% - 10px);
+    top: 5px; /* Add top padding */
+    border-radius: 100px;
+    background-color: #d1e2c0;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  .navbar a.active {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-family: "RobotoFlex";
+    position: relative;
+    margin: 0px 24px;
+    color: white;
+    background-color: black;
+  }
+  .h1test {
+    margin-top: 150vh;
+  }
+  header img {
+    width: 30px;
+    height: auto;
+  }
+
+  .logoDesk {
+    display: none;
+  }
+
+  .kontaktknap {
+    display: flex;
+    align-items: center;
+    padding: 7px 7px;
+    background-color: #d1e2c0;
+    border-radius: 10px;
+  }
+
+  nav {
+    position: fixed;
+    margin-top: 15px;
+    top: 0;
+    transition: transform 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: calc(100% - 48px);
+    align-items: center;
+    border: 1px solid #a6a3a3;
+    background-color: grey;
+    border-radius: 100px;
+  }
+
+  .navbar .cursor {
+    display: none;
+  }
+
+  .kontaktknap a {
+    font-size: 3vw;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+
+  .navbar p {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .navbar a {
+    font-size: 3vw;
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+  }
+
+  .kontaktknap img {
+    display: none;
+    width: 7px;
+    height: auto;
+  }
+}
