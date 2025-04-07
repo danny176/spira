@@ -4,7 +4,7 @@ import "./App.css";
 import Ydelser from "./views/Ydelser";
 import OmOs from "./views/OmOs";
 import Kontakt from "./views/Kontakt";
-import Bæredygtighed from "./views/Bæredygtighed";
+import Baeredygtighed from "./views/Baeredygtighed";
 import Home from "./views/Home";
 
 const router = createBrowserRouter([
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "baeredygtighed",
-        element: <Bæredygtighed />,
+        element: <Baeredygtighed />,
       },
       {
         path: "kontakt",

@@ -65,6 +65,12 @@
     justify-content: space-between;
   }
 
+  .headercopy {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .socials {
     display: flex;
     gap: 15px;
@@ -137,7 +143,7 @@
   .navbar {
     border: 1px solid #a6a3a3;
     background-color: grey;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 100px;
     display: flex;
     gap: 20px;
@@ -252,5 +258,51 @@
     display: none;
     width: 7px;
     height: auto;
+  }
+
+  footer h2 {
+    font-family: "SwearTextMedium";
+    font-size: 25vw;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .logocontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; /* optional: center everything horizontally */
+    gap: 25px; /* space between elements */
+  }
+
+  .footerheader {
+    margin-bottom: 30px;
+  }
+
+  .headercopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials {
+    display: flex;
+    gap: 15px;
+    order: 0; /* move to top */
+  }
+  
+  h2 {
+    order: 1; /* middle (default) */
+  }
+  
+  h5 {
+    order: 2; /* below h2 */
+  }
+
+  footer {
+    margin-top: 10vh;
+    width: 100%;
   }
 }

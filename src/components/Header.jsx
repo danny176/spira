@@ -21,15 +21,27 @@ export default function Header() {
   const [showNav, setShowNav] = useState(true);
   const lastScrollY = useRef(0); // Bruges til at gemme sidste scroll-position for at bestemme retningen på scrollen
 
+  const hideScrollY = useRef(0); //Gemmer position for scroll, til at skjule navbaren efter 100px og vise igen efter 100px
+
   // useEffect som reagerer på scroll-bevægelse og viser/skjuler navbaren baseret på om man scroller op eller ned
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY; // Hent den nuværende scroll-position
 
+      // Scroller ned
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setShowNav(false); // Hvis vi scroller ned og er mere end 100px nede, skjul navbaren
-      } else {
-        setShowNav(true); // Hvis vi scroller op, vis navbaren
+        setShowNav(false);
+        hideScrollY.current = currentScrollY; // Gem hvor langt vi var nede da vi skjulte navbaren
+      }
+
+      // Scroller op
+      if (currentScrollY < lastScrollY.current) {
+        const scrollUpDistance = hideScrollY.current - currentScrollY;
+
+        // Hvis vi har scrollet mindst 100px op, vis navbaren
+        if (scrollUpDistance > 100) {
+          setShowNav(true);
+        }
       }
 
       lastScrollY.current = currentScrollY; // Gem den nuværende scroll-position
@@ -60,7 +72,7 @@ export default function Header() {
     const tab = tabRefs.current[index]; // Hent det specifikke link-element
     if (tab) {
       const { offsetLeft, offsetWidth } = tab; // Hent positionen (venstre) og bredden af linket
-      const newWidth = offsetWidth + 25; // Tilføj lidt ekstra bredde for cursoren
+      const newWidth = offsetWidth + 30; // Tilføj lidt ekstra bredde for cursoren
       const newLeft = offsetLeft + (offsetWidth - newWidth) / 2; // Beregn venstreforskyvningen, så cursoren er centreret
 
       setPosition({
