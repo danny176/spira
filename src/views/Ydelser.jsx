@@ -116,7 +116,7 @@ export default function ForwardChain() {
               </div>
             </div>
 
-            
+
             <div className="relative">
           {services.map((service, index) => (
             <div 
@@ -152,8 +152,16 @@ export default function ForwardChain() {
           ))}
         </div>
 
-    </section>
-
+  <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.5s ease-out forwards;
+        }
+      `}</style>
+  </section>
     
   )
 }
