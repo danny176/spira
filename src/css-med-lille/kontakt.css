@@ -101,31 +101,6 @@
     transition: background-color 0.2s ease;
   }
   
-  /* Styling desktop */
-  @media screen and (min-width: 501px) {
-    .font1 {
-      font-family: "RobotoFlex";
-      color: white;
-      font-size: 128px;
-      font-weight: 400;
-    }
-  
-    .font2 {
-      font-family: "SwearTextMedium";
-      color: white;
-      font-size: 128px;
-    }
-  
-    .intro-tekst {
-      font-family: "RobotoFlex";
-      font-size: 16px;
-      font-weight: 300;
-    }
-    .kontakt-container {
-        padding-bottom: 300px;
-      }
-  }
-  
   /* Styling mobil */
   @media screen and (max-width: 500px) {
     .kontakt-indhold {
@@ -157,6 +132,33 @@
 
     .kontakt-container {
         padding-bottom: 200px;
+      }
+  }
+  
+  
+
+  /* Styling desktop */
+  @media screen and (min-width: 501px) {
+    .font1 {
+      font-family: "RobotoFlex";
+      color: white;
+      font-size: 128px;
+      font-weight: 400;
+    }
+  
+    .font2 {
+      font-family: "SwearTextMedium";
+      color: white;
+      font-size: 128px;
+    }
+  
+    .intro-tekst {
+      font-family: "RobotoFlex";
+      font-size: 16px;
+      font-weight: 300;
+    }
+    .kontakt-container {
+        padding-bottom: 300px;
       }
   }
   
