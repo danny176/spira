@@ -35,14 +35,6 @@
     background-color: black;
   }
 
-  .headertext {
-    margin: 100vh 0px;
-  }
-
-  .h1test {
-    margin-top: 150vh;
-  }
-
   footer h2 {
     font-family: "SwearTextMedium";
     font-size: 25vw;
@@ -70,12 +62,7 @@
   .socials {
     display: flex;
     gap: 15px;
-  }
-
-  .copysocials {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    padding-bottom: 400px;
   }
 
   .logoMobile {
@@ -178,6 +165,12 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  header {
+    width: 100%;
+    height: 100px;
+  }
+
   body {
     font-family: "RobotoFlex";
     position: relative;
