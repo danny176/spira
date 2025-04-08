@@ -8,9 +8,12 @@ import iconDesign from "../assets/iconDesign.svg";
 import iconWebsupport from "../assets/iconWebsupport.svg";
 import iconBaere from "../assets/iconBaere.svg";
 import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Observer } from "gsap/Observer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
+ScrollTrigger.normalizeScroll(true); // ✅ KEY LINE
 
 export default function Home() {
   const logoRef = useRef(null);
@@ -28,6 +31,11 @@ export default function Home() {
   const kort3 = useRef(null);
   const kort4 = useRef(null);
   const ydelsessec = useRef(null);
+  const kontaktkomp = useRef(null);
+
+  const isMobile = window.innerWidth <= 500;
+
+ 
 
   useEffect(() => {
     gsap.to(logoRef.current, {
@@ -39,16 +47,21 @@ export default function Home() {
 
   useEffect(() => {
     gsap.to(logoHeaderText.current, {
-      x: -500,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: introText.current,
-        start: "top 20%",
-        end: "bottom top",
-        scrub: 2,
-      },
-    });
-  }, []);
+        x: -500,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: introText.current,
+          start: isMobile ? "top 20%" : "top 20%",
+          end: isMobile ? "bottom top" : "bottom top",
+          scrub: 2,
+        },
+      });
+    
+      // Fix layout shifts on mobile
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 500);
+    }, []);
 
   useEffect(() => {
     gsap.to(HeaderText2.current, {
@@ -79,11 +92,15 @@ export default function Home() {
         y: 0,
         rotation: 0, // End at 0 degrees (original position)
         opacity: 1, // End with opacity 1 (fully visible)
+        duration: 1,
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: caseContainer.current,
-          start: "top center",
+          start: isMobile ? "top bottom" : "top 20%",
           end: "bottom bottom",
-          scrub: 3,
+          scrub: isMobile ? false : 3,
+          toggleActions: isMobile ? "play none none none" : undefined,
+          markers: true,
         },
       }
     );
@@ -103,13 +120,16 @@ export default function Home() {
         // To (final state)
         x: 0,
         y: 0,
+        duration: 1,
+        ease: "power1.inOut",
         rotation: 0, // End at 0 degrees (original position)
         opacity: 1, // End with opacity 1 (fully visible)
         scrollTrigger: {
           trigger: caseContainer2.current,
           start: "top center",
           end: "bottom bottom",
-          scrub: 3,
+          scrub: isMobile ? false : 3,
+          toggleActions: isMobile ? "play none none none" : undefined,
         },
       }
     );
@@ -229,7 +249,7 @@ export default function Home() {
       {
         // From (initial state)
         opacity: 1, // Start with opacity 0
-        y: 400,
+        y: isMobile ? 300 : 400,
       },
       {
         // To (final state)
@@ -237,11 +257,14 @@ export default function Home() {
         y: 0,
         rotation: 0, // End at 0 degrees (original position)
         opacity: 1, // End with opacity 1 (fully visible)
+        duration: 1,
+        ease: "power1.in",
         scrollTrigger: {
-          trigger: caseContainer.current,
-          start: "top center",
+          trigger: isMobile ?  casePic1.current : caseContainer.current,
+          start: "top bottom",
           end: "bottom bottom",
-          scrub: 3,
+          scrub: isMobile ? 3 : 3,
+          markers: true,
         },
       }
     );
@@ -266,9 +289,33 @@ export default function Home() {
           trigger: ydelsessec.current,
           start: "top bottom",
           end: "bottom center",
-          markers: true,
         },
         duration: 3,
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    gsap.fromTo(
+      kontaktkomp.current, // The element we want to animate
+      {
+        // From (initial state)
+        opacity: 0, // Start with opacity 0
+        x: 600,
+      },
+      {
+        // To (final state)
+        x: 0,
+        y: 0,
+        ease: "expo.out",
+        rotation: 0, // End at 0 degrees (original position)
+        opacity: 1, // End with opacity 1 (fully visible)
+        scrollTrigger: {
+          trigger: kontaktkomp.current,
+          start: "top bottom",
+          end: "bottom center",
+          scrub: 4,
+        },
       }
     );
   }, []);
@@ -279,19 +326,22 @@ export default function Home() {
       {
         // From (initial state)
         opacity: 1, // Start with opacity 0
-        y: 400,
+        y: isMobile ? 300 : 400,
       },
       {
         // To (final state)
         x: 0,
         y: 0,
+        duration: 1,
+        ease: "power1.in",
         rotation: 0, // End at 0 degrees (original position)
         opacity: 1, // End with opacity 1 (fully visible)
         scrollTrigger: {
-          trigger: caseContainer2.current,
+          trigger: isMobile ?  casePic2.current : caseContainer2.current,
           start: "top center",
           end: "bottom bottom",
-          scrub: 3,
+          scrub: isMobile ? 3 : 3,
+          toggleActions: isMobile ? "play none none none" : undefined,
         },
       }
     );
@@ -430,11 +480,13 @@ export default function Home() {
       </section>
 
       <section className="kontaktkomp">
+        <div ref={kontaktkomp} className="konktaktknapcont">
         <h3>
-          Vil du vide mere om, hvad vi tilbyder, eller har du spørgsmål? Du er
+          Vil du vide mere om, hvad vi tilbyder, eller har du spørgsmål? <br /><br /> Du er
           velkommen til at kontakt os!
         </h3>
-        <a className="kontaktknapside" href="Kontakt.jsx">Kontakt</a>
+        <a className="kontaktknapside" href="/spira/Kontakt">Kontakt</a>
+        </div>
       </section>
     </>
   );

@@ -65,6 +65,7 @@
   }
 
   .textcasecontainer {
+    padding-left: 25px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -113,6 +114,7 @@
     border-radius: 100px;
     border: 1px solid #d1e2c0;
     align-self: flex-start;
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   .ydelsersec h2 {
@@ -219,6 +221,7 @@
   }
 
   .kontaktkomp {
+    overflow: hidden;
     margin-top: 30vh;
     margin-bottom: 20vh;
     display: flex;
@@ -228,10 +231,22 @@
     align-items: center;
   }
 
-.kontaktkomp h3 {
+  .konktaktknapcont {
+    overflow: hidden;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kontaktkomp h3 {
     font-weight: 400;
     font-size: 2.5rem;
-} 
+    text-align: center;
+    line-height: 1;
+  }
 
   .kontaktknapside {
     font-size: 2rem;
@@ -242,5 +257,268 @@
     align-items: center;
     border-radius: 100px;
     border: 1px solid #d1e2c0;
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .kontaktknapside:hover,
+  .seprojektknap:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fullscreenhero {
+    height: 90dvh;
+    display: flex; /* You can use flexbox to center content or organize elements inside */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically (optional based on your design) */
+    position: relative; /* Ensures proper positioning */
+  }
+  .overflowhiddentext {
+    overflow: hidden;
+    gap: 74px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headertext {
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .headertext2 {
+    padding-left: 150px;
+    font-family: "SwearTextMedium";
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .logoForside {
+    width: 20vw;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .udvalgtecases {
+    margin-bottom: 10vh;
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 2rem;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .casecontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .casecontainer2 {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .textcasecontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .textcasecontainer h2 {
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .textcasecontainer p {
+    font-family: "RobotoFlex";
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: auto;
+  }
+
+  .case1,
+  .case2 {
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .overflowhiddencases {
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  .seprojektknap {
+    order: -1;
+    color: #d1e2c0;
+    cursor: pointer;
+    width: auto;
+    font-family: "RobotoFlex";
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: inline-flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    border: 1px solid #d1e2c0;
+    align-self: flex-start;
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .ydelsersec h2 {
+    margin-top: 20vh;
+    padding-bottom: 5vh;
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .textydel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .tekstydelsbase,
+  .tekstydelsbase2 {
+    width: 100%;
+    font-family: "RobotoFlex";
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .hvadtilbydervisec {
+    overflow: hidden;
+  }
+
+  .hvadtilbydervisec h2 {
+    margin-top: 20vh;
+    padding-bottom: 10vh;
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .kortcontainererow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kortcontainer1 {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .kortcontainer2 {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .kort1,
+  .kort2 {
+    color: #ffffff;
+    border-radius: 20px;
+    background: #323232;
+    width: 100%;
+    padding: 25px 25px;
+  }
+
+  .kort1 img,
+  .kort2 img {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+
+  .kort1 h3,
+  .kort2 h3 {
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .kort1 li,
+  .kort2 li {
+    padding-top: 25px;
+    font-family: "RobotoFlex";
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .kort1 ul,
+  .kort2 ul {
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+
+  .titelIcon {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+  }
+
+  .kontaktkomp {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .konktaktknapcont {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kontaktkomp h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .kontaktknapside {
+    font-size: 1rem;
+    color: #d1e2c0;
+    display: inline-flex;
+    padding: 12px 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #d1e2c0;
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
