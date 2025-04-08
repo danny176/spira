@@ -139,8 +139,20 @@
         font-style: italic;
       }
 
+      .kort-billede-pris {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        align-items: flex-end;
+      }
+
       .kort-billede {
-        width: 10%;
+        width: 100%;
+      }
+
+      .kort-pris {
+        font-family: "RobotoFlex";
+        padding-top: 20%;
       }
 
     .kort:nth-child(1) {

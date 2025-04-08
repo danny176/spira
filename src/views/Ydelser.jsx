@@ -37,14 +37,19 @@ export default function ForwardChain() {
                 <div className='kort-tekst'>
                 <h2>Branding & Visuel Identitet</h2>
                 <p> 
-                  Vi udarbejder moodboard sammen, så vi kan nemt kan finde frem til lige netop dine ønsker
-                  Vi designer dit nye logo og branddesign i tæt samarbejde, for at få det bedst mulige resultat. 
-                  Her efter vil vi udarbejde en designmanual, så du også nemt selv kan skabe ændringer.
-                  Derudover kan vi hjælpe dig med grafisk design til både online og offline materialer.
+                  Vi udarbejder moodboard sammen, så vi kan nemt kan finde frem til lige netop dine ønsker. <br/>
+                  Vi designer dit nye logo og branddesign i tæt samarbejde, for at få det bedst mulige resultat.<br/><br/>
+                  Her efter vil vi udarbejde en designmanual, så du også nemt selv kan skabe ændringer.<br/>
+                  Derudover kan vi hjælpe dig med grafisk design til både online og offline materialer.<br/>
                 </p>
               </div>
+              <div className='kort-billede-pris'>
               <div className='kort-billede'>
                 <img src={SPIRALIKON} alt="logo"/>
+              </div>
+              <div className='kort-pris'>
+                <p>Pris fra kun 999 kr</p>
+              </div>
               </div>
               </div>
 
@@ -52,13 +57,18 @@ export default function ForwardChain() {
                 <div className='kort-tekst'>
                 <h2>Webudvikling & Design</h2>
                 <p> 
-                  Vi designer og udvikler din nye hjemmeside lige efter dine ønsker - ofte i REACT eller wordpress. 
-                  Vi har altid brugervenlighed i fokus, og går derfor meget op i at vide mest muligt om målgruppen, for at kunne skabe den bedst mulige brugeroplevelse.
+                  Vi designer og udvikler din nye hjemmeside lige efter dine ønsker - ofte i REACT eller wordpress. <br/><br/> 
+                  Vi har altid brugervenlighed i fokus, og går derfor meget op i at vide mest muligt om målgruppen, for at kunne skabe den bedst mulige brugeroplevelse.<br/><br/>
                   Derudover har vi stor erfaring indenfor responsivt design, så din hjemmeside vil fungere på alle enheder.
                 </p>
               </div>
+              <div className='kort-billede-pris'>
               <div className='kort-billede'>
                 <img src={SPIRALIKON} alt="logo"/>
+              </div>
+              <div className='kort-pris'>
+                <p>Pris fra kun 999 kr</p>
+              </div>
               </div>
               </div>
 
@@ -67,12 +77,17 @@ export default function ForwardChain() {
                 <h2>Websupport & Vedligeholdelse</h2>
                 <p> 
                   Har du allerede en hjemmeside du er rigtig glad for?
-                  Vi kan hoste hjemmesiden for dig, og hjælpe dig med vedligeholdelse af denne.
+                  Vi kan hoste hjemmesiden for dig, og hjælpe dig med vedligeholdelse af denne.<br/><br/>
                   Vi tilbyder at hjælpe dig med løbende optimeringer, sikkerhedsopdateringer og teknisk support, for at du selv kan spare tid, og kan fokusere mere på din kerneforretning.
                 </p>
               </div>
+              <div className='kort-billede-pris'>
               <div className='kort-billede'>
                 <img src={SPIRALIKON} alt="logo"/>
+              </div>
+              <div className='kort-pris'>
+                <p>Pris fra kun 999 kr</p>
+              </div>
               </div>
               </div>
 
@@ -80,14 +95,19 @@ export default function ForwardChain() {
                 <div className='kort-tekst'>
                 <h2>Webdesign & bæredygtighed</h2>
                 <p> 
-                  Vi tilbyder at optimere din hjemmeside, for at gøre den mere bæredygtig. Vi kan både skabe den fra bunden, med fokus på bæredygtighed, eller blot optimere din allerede eksisterende hjemmeside. 
-                  Vi gør det med fokus på et lavere CO₂-aftryk, men også fordi det faktisk vil gøre fx loading tider hurtigere, eller optimere din SEO endnu mere. 
+                  Vi tilbyder at optimere din hjemmeside, for at gøre den mere bæredygtig. Vi kan både skabe den fra bunden, med fokus på bæredygtighed, eller blot optimere din allerede eksisterende hjemmeside. <br/><br/>
+                  Vi gør det med fokus på et lavere CO₂-aftryk, men også fordi det faktisk vil gøre fx loading tider hurtigere, eller optimere din SEO endnu mere.<br/><br/> 
 
                   Vil du vide mere om bæredygtighed indenfor den online verden? SÅ KLIK HER
                 </p>
               </div>
+              <div className='kort-billede-pris'>
               <div className='kort-billede'>
                 <img src={SPIRALIKON} alt="logo"/>
+              </div>
+              <div className='kort-pris'>
+                <p>Pris fra kun 999 kr</p>
+              </div>
               </div>
               </div>
             </div>
