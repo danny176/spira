@@ -2,13 +2,13 @@
     .ydelse-header-alt {
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     
     .ydelse-section {
         background-color: black;
         color: white;
-        padding: 4rem 4rem;
+        padding: 10rem 4rem;
       }
       
       .ydelse-header {
@@ -74,4 +74,249 @@
           transform: rotate(720deg);
         }
       }
+
+      .kortholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      
+      .kort {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+        width: 100%;
+        top: 30px;
+        position: sticky;
+        border: 1px solid #CCC;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        background-color: #323232;
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      @font-face {
+        font-family: "RobotoFlex";
+        src: url("../fonts/RobotoFlex.ttf") format("truetype");
+        font-weight: 100 1000;
+        font-style: normal;
+      }
+
+      .kort-tekst {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 1rem;
+      }
+
+      .kort-tekst p {
+        font-family: "RobotoFlex" ;
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+
+      @font-face {
+        font-family: "SwearTextLight";
+        src: url("../fonts/SwearTextLight.otf") format("opentype");
+        font-weight: 100 1000;
+        font-style: normal;
+      }
+
+      .kort-tekst h2 {
+        padding: 0;
+        font-size: 3rem;
+        font-family: "SwearTextLight";
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      .kort-billede {
+        width: 10%;
+      }
+
+    .kort:nth-child(1) {
+      top: 10%;
+    }
+    .kort:nth-child(2) {
+      top: 25%;
+    }
+    .kort:nth-child(3) {
+      top: 40%;
+    }
+    .kort:nth-child(4) {
+      top: 55%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .ydelse-header-alt {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 60%;
+      margin-top: 25%;
+      text-align: center;
+  }
+  
+  .ydelse-section {
+      background-color: black;
+      color: white;
+      padding: 8rem 0rem;
+    }
+    
+    .ydelse-header {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 5%;
+      margin-bottom: 3%;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    @font-face {
+      font-family: "RobotoFlex";
+      src: url("../fonts/RobotoFlex.ttf") format("truetype");
+      font-weight: 100 1000;
+      font-style: normal;
+    }
+  
+    .ydelse-title .main-title {
+      font-size: 4rem;
+      font-weight: 300;
+      font-family: "RobotoFlex";
+    }
+  
+    @font-face {
+      font-family: "SwearTextLight";
+      src: url("../fonts/SwearTextLight.otf") format("opentype");
+      font-weight: 100 1000;
+      font-style: normal;
+    }
+    
+    .ydelse-title .sub-title {
+      font-size: 4rem;
+      font-family: "SwearTextLight";
+    }
+
+    .ydelse-title {
+      display: flex;
+      gap: 5%;
+    }
+    
+    .intro-text {
+      margin-top: 1rem;
+      max-width: 400px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    
+    .spiral-icon {
+      width: 40%;
+      animation: spinOnce 1s ease 2s forwards, spinLoop 20s linear 4s infinite;
+      transform-origin: center center;
+    }
+  
+    @keyframes spinOnce {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes spinLoop {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(720deg);
+      }
+    }
+
+    .kortholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .kort {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 5%;
+      width: 100%;
+      top: 30px;
+      position: sticky;
+      border: 1px solid #CCC;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      background-color: #323232;
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    @font-face {
+      font-family: "RobotoFlex";
+      src: url("../fonts/RobotoFlex.ttf") format("truetype");
+      font-weight: 100 1000;
+      font-style: normal;
+    }
+
+    .kort-tekst {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 50%;
+      gap: 1rem;
+    }
+
+    .kort-tekst p {
+      font-family: "RobotoFlex" ;
+      font-weight: 300;
+      font-size: 0.5rem;
+    }
+
+    @font-face {
+      font-family: "SwearTextLight";
+      src: url("../fonts/SwearTextLight.otf") format("opentype");
+      font-weight: 100 1000;
+      font-style: normal;
+    }
+
+    .kort-tekst h2 {
+      padding: 0;
+      font-size: 3rem;
+      font-family: "SwearTextLight";
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    .kort-billede {
+      width: 10%;
+    }
+
+  .kort:nth-child(1) {
+    top: 10%;
+  }
+  .kort:nth-child(2) {
+    top: 25%;
+  }
+  .kort:nth-child(3) {
+    top: 40%;
+  }
+  .kort:nth-child(4) {
+    top: 55%;
+  }
 }
