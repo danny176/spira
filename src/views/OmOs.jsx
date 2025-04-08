@@ -7,6 +7,7 @@ import MAR from "../assets/mariapor.svg";
 
 export default function ForwardChain() {
   return <>
+  
  <p><span className="hvemer">Hvem er</span><span className="vi"> vi?</span></p>
  <p>Her kan du møde os bag Spira og se hvad vi hver især står for i udviklingsprocessen af dit nye website!</p>
 
