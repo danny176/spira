@@ -1,29 +1,160 @@
+/* Importeret fonts */
 @font-face {
     font-family: "SwearTextMedium";
     src: url("./fonts/SwearTextMedium.otf") format("opentype");
     font-weight: 100 1000;
     font-style: normal;
   }
-
+  
   @font-face {
     font-family: "RobotoFlex";
     src: url("./fonts/RobotFlex.ttf") format("truetype");
     font-weight: 100 1000;
     font-style: normal;
   }
-
-/*Style til desktop*/
-@media screen and (min-width:501px) {
+  
+  /* General styling */
+  .kontakt-container {
+    background-color: #000;
+    color: white;
+    margin: 0 auto;
+    font-family: "RobotoFlex";
+  }
+  
+  /* Overskrift-styling (øverst) */
+  .kontakt-h1 {
+    margin-bottom: 48px; /* 3rem */
+    font-weight: 300;
+    line-height: 1;
+  }
+  
+  /* Indhold opdelt i to kolonner under h1 */
+  .kontakt-indhold {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px; /* 4rem */
+    flex-wrap: wrap;
+  }
+  
+  /* Venstre kolonne introtekst */
+  .kontakt-tekst {
+    flex: 1;
+    min-width: 280px;
+    font-size: 16px; /* 1rem */
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 700px;
+  }
+  
+  /* Højre kolonne kontaktformular */
+  .kontakt-formular {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* 1rem */
+  }
+  
+  /* To inputfelter pr. række */
+  .form-row {
+    display: flex;
+    gap: 16px; /* 1rem */
+    flex-wrap: wrap;
+  }
+  
+  /* Input- og textarea-styling */
+  .kontakt-formular input,
+  .kontakt-formular textarea {
+    font-family: "RobotoFlex";
+    background-color: #323232;
+    border: none;
+    padding: 12px 16px; /* 0.75rem 1rem */
+    color: #fff;
+    font-size: 16px; /* 1rem */
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  /* Beskedfeltet */
+  .kontakt-formular textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Send-knap styling */
+  .kontakt-formular button {
+    align-self: flex-start;
+    background-color: #323232;
+    color: #fff;
+    border: none;
+    padding: 12px 32px; /* 0.75rem 2rem */
+    font-size: 16px; /* 1rem */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Hover-effekt på knappen */
+  .kontakt-formular button:hover {
+    background-color: #D1E2C0;
+    color: #000;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Styling desktop */
+  @media screen and (min-width: 501px) {
     .font1 {
-        font-family: "RobotoFlex";
-        color: white;
-        font-size: 128px;
-        font-weight: 400;
-      }
-      
-      .font2 {
-        font-family: "SwearTextMedium";
-        color:white;
-        font-size: 128px;
-      } 
-}
+      font-family: "RobotoFlex";
+      color: white;
+      font-size: 128px;
+      font-weight: 400;
+    }
+  
+    .font2 {
+      font-family: "SwearTextMedium";
+      color: white;
+      font-size: 128px;
+    }
+  
+    .intro-tekst {
+      font-family: "RobotoFlex";
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  
+  /* Stylin mobil */
+  @media screen and (max-width: 500px) {
+    .kontakt-container {
+      padding-top: 30%;
+    }
+  
+    .kontakt-indhold {
+      flex-direction: column;
+    }
+  
+    .font1 {
+      font-family: "RobotoFlex";
+      color: white;
+      font-size: 40px;
+      font-weight: 400;
+    }
+  
+    .font2 {
+      font-family: "SwearTextMedium";
+      color: white;
+      font-size: 40px;
+    }
+  
+    .kontakt-formular button {
+      width: 100%;
+    }
+  
+    .intro-tekst {
+      font-family: "RobotoFlex";
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  
+  
