@@ -121,14 +121,13 @@
       font-size: 16px;
       font-weight: 300;
     }
+    .kontakt-container {
+        padding-bottom: 300px;
+      }
   }
   
-  /* Stylin mobil */
+  /* Styling mobil */
   @media screen and (max-width: 500px) {
-    .kontakt-container {
-      padding-top: 30%;
-    }
-  
     .kontakt-indhold {
       flex-direction: column;
     }
@@ -155,6 +154,10 @@
       font-size: 12px;
       font-weight: 300;
     }
+
+    .kontakt-container {
+        padding-bottom: 200px;
+      }
   }
   
   

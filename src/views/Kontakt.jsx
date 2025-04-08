@@ -16,7 +16,7 @@ export default function ForwardChain() {
   const handleChange = e =>
     setFormData({ ...formData, [e.target.name]: e.target.value })
 
-  // Når formularen bliver sendt 
+  // Når formularen bliver sendt (her kan du sende til backend eller lign.)
   const handleSubmit = e => {
     e.preventDefault()
     console.log("Form submitted:", formData)
@@ -24,7 +24,7 @@ export default function ForwardChain() {
 
   return (
     <div className="kontakt-container">
-      {/* h1 */}
+      {/* Stor overskrift øverst */}
       <h1 className="kontakt-h1">
         <span className="font1">Er du</span>
         <span className="font2"> interesseret?</span>
