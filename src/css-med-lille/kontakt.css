@@ -23,7 +23,7 @@
   
   /* Overskrift-styling (øverst) */
   .kontakt-h1 {
-    margin-bottom: 48px; /* 3rem */
+    margin-bottom: 48px; 
     font-weight: 300;
     line-height: 1;
   }
@@ -32,7 +32,7 @@
   .kontakt-indhold {
     display: flex;
     justify-content: space-between;
-    gap: 64px; /* 4rem */
+    gap: 64px; 
     flex-wrap: wrap;
   }
   
@@ -40,7 +40,7 @@
   .kontakt-tekst {
     flex: 1;
     min-width: 280px;
-    font-size: 16px; /* 1rem */
+    font-size: 16px;
     line-height: 1.6;
     font-weight: 300;
     max-width: 700px;
@@ -52,13 +52,13 @@
     min-width: 250px;
     display: flex;
     flex-direction: column;
-    gap: 16px; /* 1rem */
+    gap: 16px; 
   }
   
   /* To inputfelter pr. række */
   .form-row {
     display: flex;
-    gap: 16px; /* 1rem */
+    gap: 16px; 
     flex-wrap: wrap;
   }
   
@@ -68,9 +68,9 @@
     font-family: "RobotoFlex";
     background-color: #323232;
     border: none;
-    padding: 12px 16px; /* 0.75rem 1rem */
+    padding: 12px 16px; 
     color: #fff;
-    font-size: 16px; /* 1rem */
+    font-size: 16px; 
     border-radius: 5px;
     flex: 1;
   }
@@ -87,8 +87,8 @@
     background-color: #323232;
     color: #fff;
     border: none;
-    padding: 12px 32px; /* 0.75rem 2rem */
-    font-size: 16px; /* 1rem */
+    padding: 12px 32px; 
+    font-size: 16px; 
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
@@ -121,14 +121,13 @@
       font-size: 16px;
       font-weight: 300;
     }
+    .kontakt-container {
+        padding-bottom: 300px;
+      }
   }
   
-  /* Stylin mobil */
+  /* Styling mobil */
   @media screen and (max-width: 500px) {
-    .kontakt-container {
-      padding-top: 30%;
-    }
-  
     .kontakt-indhold {
       flex-direction: column;
     }
@@ -155,6 +154,10 @@
       font-size: 12px;
       font-weight: 300;
     }
+
+    .kontakt-container {
+        padding-bottom: 200px;
+      }
   }
   
   

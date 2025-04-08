@@ -12,19 +12,16 @@ export default function ForwardChain() {
     besked: ''
   })
 
-  // Opdater formData ved ændring i felterne
+  // Opdater formData (objektet med alle inputværdierne fra formularen) ved ændring i felterne. 
   const handleChange = e =>
     setFormData({ ...formData, [e.target.name]: e.target.value })
 
-  // Når formularen bliver sendt 
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-  }
+  // Til udvidelsen, hvis der skal ske noget, når formularen bliver sendt 
+  const handleSubmit = e => e.preventDefault()
 
   return (
     <div className="kontakt-container">
-      {/* h1 */}
+      {/* H1 */}
       <h1 className="kontakt-h1">
         <span className="font1">Er du</span>
         <span className="font2"> interesseret?</span>
