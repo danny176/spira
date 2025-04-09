@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import SPIRALIKON from "../assets/spiramobile.svg";
-/*
-import IPHONEJPEG from "../assets/iphonejpeg.jpeg";
-import IPHONEWEBP from "../assets/iphonewebp.webp"; 
-import SPIRALIKON from "../assets/spiramobile.svg";
-import IPHONEJPEG from "../assets/iphonejpeg.jpeg";
-*/
+
+import ICONBAERE from "../assets/iconBaere.svg";
+import ICONBRANDING from "../assets/iconBranding.svg";
+import ICONDESIGN from "../assets/iconDesign.svg";
+import ICONWEBSUPPORT from "../assets/iconWebsupport.svg";
+
 import "../css-med-lille/ydelser.css";
 
 
@@ -45,7 +45,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={SPIRALIKON} alt="logo"/>
+                <img src={ICONBRANDING} alt="ikon branding"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -64,7 +64,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={SPIRALIKON} alt="logo"/>
+                <img src={ICONDESIGN} alt="ikon design"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -83,7 +83,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={SPIRALIKON} alt="logo"/>
+                <img src={ICONWEBSUPPORT} alt="ikon websupport"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -103,7 +103,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={SPIRALIKON} alt="logo"/>
+                <img src={ICONBAERE} alt="ikon bæredygtighed"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
