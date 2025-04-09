@@ -27,18 +27,18 @@
   }
 
   .headertext2 {
-    padding-left: 12vw;
+    padding-left: 450px;
     font-family: "SwearTextMedium";
     font-size: 6vw;
     overflow: hidden;
   }
 
   .logoForside {
-    width: 20vw;
+    width: 250px;
     height: auto;
     position: absolute;
     right: 10%;
-    top: -50%;
+    top: -15%;
   }
 
   .udvalgtecases {
@@ -70,7 +70,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 650px;
+    width: 500px;
   }
 
   .textcasecontainer h2 {
@@ -189,7 +189,7 @@
   .kort1 img,
   .kort2 img {
     display: block;
-    width: 200px;
+    width: 125px;
     height: auto;
   }
 
@@ -198,7 +198,7 @@
     font-family: "RobotoFlex";
     font-weight: 500;
     font-size: 3vw;
-    width: 500px;
+    width: 425px;
   }
 
   .kort1 li,
@@ -206,12 +206,12 @@
     padding-top: 25px;
     font-family: "RobotoFlex";
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .kort1 ul,
   .kort2 ul {
-    padding-top: 150px;
+    padding-top: 124px;
     padding-left: 30px;
   }
 

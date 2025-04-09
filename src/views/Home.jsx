@@ -13,7 +13,7 @@ import { Observer } from "gsap/Observer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
-ScrollTrigger.normalizeScroll(true); // ✅ KEY LINE
+ScrollTrigger.normalizeScroll(true);
 
 export default function Home() {
   const logoRef = useRef(null);
@@ -57,7 +57,7 @@ export default function Home() {
         },
       });
     
-      // Fix layout shifts on mobile
+      
       setTimeout(() => {
         ScrollTrigger.refresh();
       }, 500);
@@ -78,20 +78,20 @@ export default function Home() {
 
   useEffect(() => {
     gsap.fromTo(
-      casePic1.current, // The element we want to animate
+      casePic1.current, 
       {
-        // From (initial state)
-        rotation: -20, // Start at 180 degrees
-        opacity: 1, // Start with opacity 0
+        
+        rotation: -20, 
+        opacity: 1, 
         x: -500,
         y: 100,
       },
       {
-        // To (final state)
+        
         x: 0,
         y: 0,
-        rotation: 0, // End at 0 degrees (original position)
-        opacity: 1, // End with opacity 1 (fully visible)
+        rotation: 0, 
+        opacity: 1, 
         duration: 1,
         ease: "power1.inOut",
         scrollTrigger: {
@@ -438,20 +438,20 @@ export default function Home() {
             </div>
             <div ref={kort2} className="kort2">
               <div className="titelIcon">
-                <h3>Branding & Visuel Identitet</h3>
+                <h3>Webudvikling & Design</h3>
                 <img className="iconbrand" src={iconDesign} alt="brandicon" />
               </div>
               <ul>
-                <li>Logo og branddesign</li>
-                <li>Moodboards og design manual</li>
-                <li>Grafisk design til online og offline materialer</li>
+                <li>Design og udvikling af hjemmesider efter dine ønsker</li>
+                <li>UI/UX-design for en brugervenlig oplevelse</li>
+                <li>Responsivt design, så siden fungerer på alle enheder</li>
               </ul>
             </div>
           </div>
           <div className="kortcontainer2">
             <div ref={kort3} className="kort1">
               <div className="titelIcon">
-                <h3>Branding & Visuel Identitet</h3>
+                <h3>Websupport & Vedligeholdelse</h3>
                 <img
                   className="iconbrand"
                   src={iconWebsupport}
@@ -459,20 +459,20 @@ export default function Home() {
                 />
               </div>
               <ul>
-                <li>Logo og branddesign</li>
-                <li>Moodboards og design manual</li>
-                <li>Grafisk design til online og offline materialer</li>
+                <li>Hosting og domænehåndtering</li>
+                <li>Sikkerhedsopdateringer</li>
+                <li>Løbende optimering og teknisk support</li>
               </ul>
             </div>
             <div ref={kort4} className="kort2">
               <div className="titelIcon">
-                <h3>Branding & Visuel Identitet</h3>
+                <h3>Webdesign & bæredygtighed</h3>
                 <img className="iconbrand" src={iconBaere} alt="brandicon" />
               </div>
               <ul>
-                <li>Logo og branddesign</li>
-                <li>Moodboards og design manual</li>
-                <li>Grafisk design til online og offline materialer</li>
+                <li>Optimering af websites for lavere CO₂-aftryk</li>
+                <li>Grøn hosting og energieffektive teknologier</li>
+                <li>Performance-optimering for fx hurtigere loadtider</li>
               </ul>
             </div>
           </div>
