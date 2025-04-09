@@ -100,7 +100,6 @@ export default function Home() {
           end: "bottom bottom",
           scrub: isMobile ? false : 3,
           toggleActions: isMobile ? "play none none none" : undefined,
-          markers: true,
         },
       }
     );
@@ -153,7 +152,7 @@ export default function Home() {
         opacity: 1, // End with opacity 1 (fully visible)
         scrollTrigger: {
           trigger: kort1.current,
-          start: "top center",
+          start: "top 80%",
           end: "bottom bottom",
           scrub: 3,
           once: true,
@@ -180,7 +179,7 @@ export default function Home() {
         opacity: 1, // End with opacity 1 (fully visible)
         scrollTrigger: {
           trigger: kort2.current,
-          start: "top center",
+          start: "top 80%",
           end: "bottom bottom",
           scrub: 3,
           once: true,
@@ -207,7 +206,7 @@ export default function Home() {
         opacity: 1, // End with opacity 1 (fully visible)
         scrollTrigger: {
           trigger: kort3.current,
-          start: "top center",
+          start: "top 80%",
           end: "bottom bottom",
           scrub: 3,
           once: true,
@@ -234,10 +233,11 @@ export default function Home() {
         opacity: 1, // End with opacity 1 (fully visible)
         scrollTrigger: {
           trigger: kort4.current,
-          start: "top center",
+          start: "top 80%",
           end: "bottom bottom",
           scrub: 3,
           once: true,
+          markers: true,
         },
       }
     );
@@ -264,7 +264,6 @@ export default function Home() {
           start: "top bottom",
           end: "bottom bottom",
           scrub: isMobile ? 3 : 3,
-          markers: true,
         },
       }
     );
