@@ -32,13 +32,13 @@ export default function ForwardChain() {
 <section className="nret">
   <section className="baggrundpor" >
     <img src={DAN} alt="portræt af Daniel" />
-    <p className="navn">Daniel</p>
+    <h3 className="navn">Daniel</h3>
     <p>Daniel er specialist i webudvikling og har flere års erfaring indenfor den digitale verden.</p>
   </section>
 
   <section className="baggrundpor">
     <img src={MIK} alt="portræt af Mikkel" />
-    <p className="navn">Mikkel</p>
+    <h3 className="navn">Mikkel</h3>
     <p>Mikkel er vores projektleder. Han har flere års erfaring koordinering og projektstyring.</p>
   </section>
 </section>
@@ -46,13 +46,13 @@ export default function ForwardChain() {
 <section className="nrto">
   <section className="baggrundpor">
     <img src={VIK} alt="portræt af Viktoria" />
-    <p className="navn">Viktoria</p>
+    <h3 className="navn">Viktoria</h3>
     <p>Viktoria er vores grafiske designer. Hun har flere års erfaring med udvikling af grafiske elementer og animationer.</p>
   </section>
 
   <section className="baggrundpor">
     <img src={MAR} alt="portræt af Maria" />
-    <p className="navn">Maria</p>
+    <h3 className="navn">Maria</h3>
     <p>Maria er vores content koordinator og har flere års erfaring med udvikling af content og design elementer.</p>
   </section>
 </section>

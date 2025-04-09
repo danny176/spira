@@ -32,6 +32,7 @@
 .vi, .teamet {
     font-family: "RobotoFlex";
     font-weight: 500;
+    font-size: 6vw;
 }
 
 .hvem-er-forside {
@@ -66,7 +67,7 @@
 
 /*vores kort med vores portrætter - style indeni dem*/
 .baggrundpor {
-    background-color: #56687E; 
+    border: 1px solid #D1E2C0;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -80,18 +81,23 @@
   
 }
 
+.baggrundpor p {
+    font-weight: 300;
+    font-size: 1.1rem;
+} 
+
 /*vores kort ift hvordan de skal være i row to og to på desktop*/
 .nret, .nrto{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin-right: 10%;
     margin-left: 10%; 
 }
 
 /*padding nederst til række to af os*/
 .nrto {
-    padding-bottom: 10%;
+    padding-bottom: 100px;
 }
 
 /*padding øverst til række et af os*/
@@ -101,8 +107,9 @@
 
 /*navnet inden i kortene*/
 .navn {
-    font-size: 2rem;
-    padding-top: 3%;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-top: 5%;
     padding-bottom: 5%;
 }
 
