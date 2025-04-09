@@ -15,7 +15,7 @@ export default function ForwardChain() {
   {/* Den øverste sektion */}
   <div className="hvem-er-forside">
  <p><span className="hvemer">Hvem er</span><span className="vi"> vi?</span></p>
- <p>Her kan du møde os bag Spira og se hvad vi hver især står for i udviklingsprocessen af dit nye website!</p>
+ <p className="underteksthver">Her kan du møde os bag Spira og se hvad vi hver især står for i udviklingsprocessen af dit nye website!</p>
  </div>
 
 {/* vores værdier sektion */}
