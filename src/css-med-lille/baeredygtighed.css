@@ -8,23 +8,23 @@
 .baeredygtighed-section {
     background-color: black;
     color: white;
-    padding: 8rem 4rem 0rem 0rem;
+    padding: 12vh 0rem 0rem 0rem;
   }
   
   .baeredygtighed-header {
     display: flex;
     align-items: flex-end;
-    gap: 10%;
+    gap: 7.5%;
   }
 
   .baeredygtighed-title .main-title {
-    font-size: 8.5rem;
+    font-size: 10vw;
     font-weight: 500;
     font-family: "RobotoFlex";
   }
   
   .baeredygtighed-title .sub-title {
-    font-size: 8.5rem;
+    font-size: 10vw;
     font-family: "SwearTextMedium";
   }
   
@@ -36,7 +36,7 @@
   }
   
   .spiral-icon {
-    width: 15%;
+    width: 15vw;
     animation: spinOnce 1s ease 0.5s forwards, spinLoop 20s linear 1.5s infinite;
     transform-origin: center center;
   }
@@ -71,7 +71,7 @@
     font-size: 4rem;
     overflow: hidden;
     margin-bottom: 25px;
-    width: 500px;
+    width: 40vw;
   }
   
   .section-text,

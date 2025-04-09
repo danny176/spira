@@ -18,7 +18,7 @@ export default function ForwardChain() {
         <div>
           <p className="-intro-text">
             Her kan du læse mere om, hvilke ydelser vi tilbyder. <br />
-            Synes du der mangler noget? Kontakt os, så skal vi nok finde ud af
+            Synes du der mangler noget? <br /><br /> Kontakt os, så skal vi nok finde ud af
             noget!
           </p>
         </div>

@@ -8,13 +8,13 @@
     .ydelse-section {
         background-color: black;
         color: white;
-        padding: 10rem 4rem 0rem 0rem;
+        padding: 10vh 0rem 0rem 0rem;
       }
       
       .ydelse-header {
         display: flex;
         align-items: flex-end;
-        gap: 10%;
+        gap: 7.5%;
       }
     
       .ydelse-title .main-title {
@@ -24,8 +24,7 @@
       }
       
       .ydelse-title .sub-title {
-        font-family: "RobotoFlex";
-        font-weight: 500;
+        font-family: "SwearTextMedium";
         font-size: 10vw;
       }
 
@@ -37,13 +36,13 @@
       .-intro-text {
         margin-top: 5vh;
         font-family: "RobotoFlex";
-        font-size: 2rem;
+        font-size: 1.5vw;
         overflow: hidden;
         line-height: 1.5;
       }
       
       .spiral-icon {
-        width: 15%;
+        width: 15vw;
         animation: spinOnce 1s ease 2s forwards, spinLoop 20s linear 4s infinite;
         transform-origin: center center;
       }
