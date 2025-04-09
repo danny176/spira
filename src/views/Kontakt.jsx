@@ -1,5 +1,6 @@
 import { useState } from "react"
 import '../css-med-lille/kontakt.css'
+import logoForside from "../assets/spiralogoforside.svg";
 
 // Kontaktformular-komponent
 export default function Kontakt() {
@@ -36,6 +37,12 @@ export default function Kontakt() {
            <br /> Du er mere end velkommen til at kontakte os, så vil vi gøre vores bedste for at
             få lige netop dine ønsker opfyldt!
           </p>
+                  <img
+                    className="logoForsideKontakt"
+                    src={logoForside}
+                    alt="LogoForside"
+                    loading="lazy"
+                  />
         </div>
         
 
