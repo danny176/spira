@@ -29,6 +29,12 @@
     font-weight: 500;
   }
 
+  .logoForsideOmOs {
+    width: 15vw;
+    position: absolute;
+    right: 17vw;
+  }
+
   /*swear fonten til "vi?" og "teamet"*/
   .vi,
   .teamet {
@@ -105,7 +111,7 @@
   .nrto {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-right: 10%;
     margin-left: 10%;
   }
@@ -122,7 +128,7 @@
 
   /*navnet inden i kortene*/
   .navn {
-    font-size: 3rem;
+    font-size: 4vw;
     font-weight: 400;
     padding-top: 5%;
     padding-bottom: 5%;

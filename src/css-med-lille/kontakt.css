@@ -132,18 +132,23 @@
       font-size: 8vw;
       font-weight: 500;
     }
+
+    .logoForsideKontakt {
+      width: 15vw;
+      padding-top: 10vh;
+    }
+  
   
     .font2 {
-      font-family: "RobotoFlex";
-      color: white;
-      font-size: 8vw;
+      font-family: "SwearTextMedium";
       font-weight: 500;
+      font-size: 8vw;
     }
   
     .intro-tekst {
       font-family: "RobotoFlex";
       font-size: 1.1rem;
-      font-weight: 300;
+      font-weight: 400;
     }
     
   }
