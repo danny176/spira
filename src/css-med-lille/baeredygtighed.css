@@ -14,32 +14,18 @@
   .baeredygtighed-header {
     display: flex;
     align-items: flex-end;
-    gap: 1%;
-  }
-  
-  @font-face {
-    font-family: "RobotoFlex";
-    src: url("../fonts/RobotoFlex.ttf") format("truetype");
-    font-weight: 100 1000;
-    font-style: normal;
+    gap: 10%;
   }
 
   .baeredygtighed-title .main-title {
     font-size: 8.5rem;
-    font-weight: 300;
+    font-weight: 500;
     font-family: "RobotoFlex";
-  }
-
-  @font-face {
-    font-family: "SwearTextLight";
-    src: url("../fonts/SwearTextLight.otf") format("opentype");
-    font-weight: 100 1000;
-    font-style: normal;
   }
   
   .baeredygtighed-title .sub-title {
     font-size: 8.5rem;
-    font-family: "SwearTextLight";
+    font-family: "SwearTextMedium";
   }
   
   .intro-text {
@@ -80,13 +66,18 @@
   }
 
   .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-family: "RobotoFlex";
+    font-weight: 500;
+    font-size: 4rem;
+    overflow: hidden;
+    margin-bottom: 25px;
+    width: 500px;
   }
   
   .section-text,
   .section-text-wrapper p {
-    font-size: 0.9rem;
+    margin-top: 5vh;
+    font-size: 1.1rem;
     color: #ccc;
     max-width: 600px;
     margin-bottom: 1rem;
@@ -95,7 +86,7 @@
   .billede-optimering {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 10%;
     align-items: center;
     margin-bottom: 12%;
@@ -104,7 +95,7 @@
   .billede-sammenligning {
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 10rem;
     flex-direction: row;
     width: 50%;
   }
