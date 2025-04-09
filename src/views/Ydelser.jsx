@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { lazy, Suspense } from "react";
 
 import SPIRALIKON from "../assets/spiramobile.svg";
 import ICONBAERE from "../assets/iconBaere.svg";
@@ -6,7 +6,7 @@ import ICONBRANDING from "../assets/iconBranding.svg";
 import ICONDESIGN from "../assets/iconDesign.svg";
 import ICONWEBSUPPORT from "../assets/iconWebsupport.svg";
 
-import KontaktKnap from '../components/kontakt';
+const KontaktKnap = lazy(() => import("../components/kontakt"));
 
 import "../css-med-lille/ydelser.css";
 
@@ -27,7 +27,7 @@ export default function ForwardChain() {
             <h1 className="main-title">Vores</h1>
             <h2 className="sub-title">ydelser</h2>
           </div>
-          <img src={SPIRALIKON} alt="Spiral ikon" className="spiral-icon" />
+          <img src={SPIRALIKON} alt="Spiral ikon" className="spiral-icon" loading="lazy" />
         </div>
       </div>
 
@@ -45,7 +45,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={ICONBRANDING} alt="ikon branding"/>
+                <img src={ICONBRANDING} alt="ikon branding" loading="lazy"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -64,7 +64,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={ICONDESIGN} alt="ikon design"/>
+                <img src={ICONDESIGN} alt="ikon design" loading="lazy"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -83,7 +83,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={ICONWEBSUPPORT} alt="ikon websupport"/>
+                <img src={ICONWEBSUPPORT} alt="ikon websupport" loading="lazy"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -103,7 +103,7 @@ export default function ForwardChain() {
               </div>
               <div className='kort-billede-pris'>
               <div className='kort-billede'>
-                <img src={ICONBAERE} alt="ikon bæredygtighed"/>
+                <img src={ICONBAERE} alt="ikon bæredygtighed" loading="lazy"/>
               </div>
               <div className='kort-pris'>
                 <p>Pris fra kun 999 kr</p>
@@ -111,7 +111,9 @@ export default function ForwardChain() {
               </div>
               </div>
             </div>
-    <KontaktKnap/>
+            <Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}>
+            <KontaktKnap />
+          </Suspense>
   </section>
     
   )

@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { lazy, Suspense } from "react";
 import SPIRALIKON from "../assets/spiramobile.svg";
 import IPHONEJPEG from "../assets/iphonejpeg.jpeg";
 import IPHONEWEBP from "../assets/iphonewebp.webp";
 import "../css-med-lille/baeredygtighed.css";
-import KontaktKnap from "../components/kontakt";
+
+const KontaktKnap = lazy(() => import("../components/kontakt"));
 
 export default function Baeredygtighed() {
   return (
@@ -15,7 +16,7 @@ export default function Baeredygtighed() {
             <h1 className="main-title">Vores syn på</h1>
             <h2 className="sub-title">bæredygtighed</h2>
           </div>
-          <img src={SPIRALIKON} alt="Spiral ikon" className="spiral-icon" />
+          <img src={SPIRALIKON} alt="Spiral ikon" className="spiral-icon" loading="lazy" />
         </div>
       </div>
 
@@ -68,6 +69,7 @@ export default function Baeredygtighed() {
               src={IPHONEJPEG}
               alt="JPEG format"
               className="optimeret-billede"
+              loading="lazy"
             />
             <p className="billede-caption">JPEG - 744 kb</p>
           </div>
@@ -76,13 +78,16 @@ export default function Baeredygtighed() {
               src={IPHONEWEBP}
               alt="WEBP format"
               className="optimeret-billede"
+              loading="lazy"
             />
             <p className="billede-caption">WEBP - 86 kb</p>
           </div>
         </div>
       </div>
 
-      <KontaktKnap/>
+      <Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}>
+        <KontaktKnap />
+      </Suspense>
     </section> 
   )  
   }

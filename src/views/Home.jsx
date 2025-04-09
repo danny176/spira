@@ -11,7 +11,10 @@ import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Observer } from "gsap/Observer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import KontaktKnap from "../components/kontakt";
+
+import { lazy, Suspense } from "react";
+const KontaktKnap = lazy(() => import("../components/kontakt"));
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
 ScrollTrigger.normalizeScroll(true);
@@ -478,7 +481,9 @@ export default function Home() {
         </div>
       </section>
 
-      <KontaktKnap/>
+      <Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}>
+              <KontaktKnap />
+            </Suspense>
     </>
   );
 }

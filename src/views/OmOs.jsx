@@ -7,7 +7,7 @@ import MIK from "../assets/mikkelpor.svg";
 import VIK from "../assets/vikpor.svg";
 import MAR from "../assets/mariapor.svg";
 
-import KontaktKnap from "../components/kontakt";
+const KontaktKnap = lazy(() => import("../components/kontakt"));
 
 export default function ForwardChain() {
   return <>
@@ -31,13 +31,13 @@ export default function ForwardChain() {
 
 <section className="nret">
   <section className="baggrundpor" >
-    <img src={DAN} alt="portræt af Daniel" />
+    <img src={DAN} alt="portræt af Daniel" loading="lazy" />
     <h3 className="navn">Daniel</h3>
     <p>Daniel er specialist i webudvikling og har flere års erfaring indenfor den digitale verden.</p>
   </section>
 
   <section className="baggrundpor">
-    <img src={MIK} alt="portræt af Mikkel" />
+    <img src={MIK} alt="portræt af Mikkel" loading="lazy"/>
     <h3 className="navn">Mikkel</h3>
     <p>Mikkel er vores projektleder. Han har flere års erfaring koordinering og projektstyring.</p>
   </section>
@@ -45,17 +45,19 @@ export default function ForwardChain() {
 
 <section className="nrto">
   <section className="baggrundpor">
-    <img src={VIK} alt="portræt af Viktoria" />
+    <img src={VIK} alt="portræt af Viktoria" loading="lazy"/>
     <h3 className="navn">Viktoria</h3>
     <p>Viktoria er vores grafiske designer. Hun har flere års erfaring med udvikling af grafiske elementer og animationer.</p>
   </section>
 
   <section className="baggrundpor">
-    <img src={MAR} alt="portræt af Maria" />
+    <img src={MAR} alt="portræt af Maria" loading="lazy" />
     <h3 className="navn">Maria</h3>
     <p>Maria er vores content koordinator og har flere års erfaring med udvikling af content og design elementer.</p>
   </section>
 </section>
-<KontaktKnap/>
+<Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}>
+        <KontaktKnap />
+      </Suspense>
 </> 
 }
