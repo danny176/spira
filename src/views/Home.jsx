@@ -358,6 +358,7 @@ export default function Home() {
             className="logoForside"
             src={logoForside}
             alt="LogoForside"
+            loading="lazy"
           />
           <div className="overflowhiddentext">
             <h2 ref={logoHeaderText} className="headertext">
@@ -374,7 +375,7 @@ export default function Home() {
 
       <div className="overflowhiddencases">
         <div ref={caseContainer} className="casecontainer">
-          <img ref={casePic1} className="case1" src={case1} alt="case1" />
+          <img ref={casePic1} className="case1" src={case1} alt="case1" loading="lazy"/>
           <div ref={textContainer1} className="textcasecontainer">
             <h2>Et personligt portfolio</h2>
             <p>
@@ -389,7 +390,7 @@ export default function Home() {
           </div>
         </div>
         <div ref={caseContainer2} className="casecontainer2">
-          <img ref={casePic2} className="case2" src={case2} alt="case2" />
+          <img ref={casePic2} className="case2" src={case2} alt="case2" loading="lazy" />
           <div ref={textContainer2} className="textcasecontainer">
             <h2>Personlig træner hjemmeside</h2>
             <p>
@@ -430,7 +431,7 @@ export default function Home() {
             <div ref={kort1} className="kort1">
               <div className="titelIcon">
                 <h3>Branding & Visuel Identitet</h3>
-                <img className="iconbrand" src={iconBranding} alt="brandicon" />
+                <img className="iconbrand" src={iconBranding} alt="brandicon" loading="lazy"/>
               </div>
               <ul>
                 <li>Logo og branddesign</li>
@@ -441,7 +442,7 @@ export default function Home() {
             <div ref={kort2} className="kort2">
               <div className="titelIcon">
                 <h3>Webudvikling & Design</h3>
-                <img className="iconbrand" src={iconDesign} alt="brandicon" />
+                <img className="iconbrand" src={iconDesign} alt="brandicon" loading="lazy"/>
               </div>
               <ul>
                 <li>Design og udvikling af hjemmesider efter dine ønsker</li>
@@ -458,6 +459,7 @@ export default function Home() {
                   className="iconbrand"
                   src={iconWebsupport}
                   alt="brandicon"
+                  loading="lazy"
                 />
               </div>
               <ul>
@@ -469,7 +471,7 @@ export default function Home() {
             <div ref={kort4} className="kort2">
               <div className="titelIcon">
                 <h3>Webdesign & bæredygtighed</h3>
-                <img className="iconbrand" src={iconBaere} alt="brandicon" />
+                <img className="iconbrand" src={iconBaere} alt="brandicon" loading="lazy"/>
               </div>
               <ul>
                 <li>Optimering af websites for lavere CO₂-aftryk</li>
