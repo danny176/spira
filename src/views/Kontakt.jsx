@@ -2,7 +2,7 @@ import { useState } from "react"
 import '../css-med-lille/kontakt.css'
 
 // Kontaktformular-komponent
-export default function ForwardChain() {
+export default function Kontakt() {
   // Form state
   const [formData, setFormData] = useState({
     navn: '',
@@ -33,7 +33,7 @@ export default function ForwardChain() {
         <div className="kontakt-tekst">
           <p className="intro-tekst">
             Vil du vide mere om os, eller har du nogle specifikke ønsker eller spørgsmål?<br />
-            Du er mere end velkommen til at kontakte os, så vil vi gøre vores bedste for at
+           <br /> Du er mere end velkommen til at kontakte os, så vil vi gøre vores bedste for at
             få lige netop dine ønsker opfyldt!
           </p>
         </div>

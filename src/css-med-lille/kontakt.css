@@ -1,20 +1,7 @@
-/* Importeret fonts */
-@font-face {
-    font-family: "SwearTextMedium";
-    src: url("./fonts/SwearTextMedium.otf") format("opentype");
-    font-weight: 100 1000;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "RobotoFlex";
-    src: url("./fonts/RobotFlex.ttf") format("truetype");
-    font-weight: 100 1000;
-    font-style: normal;
-  }
-  
+
   /* General styling */
   .kontakt-container {
+    padding-top: 10vh;
     background-color: #000;
     color: white;
     margin: 0 auto;
@@ -142,24 +129,22 @@
     .font1 {
       font-family: "RobotoFlex";
       color: white;
-      font-size: 128px;
-      font-weight: 400;
+      font-size: 8vw;
+      font-weight: 500;
     }
   
     .font2 {
-      font-family: "SwearTextMedium";
+      font-family: "RobotoFlex";
       color: white;
-      font-size: 128px;
+      font-size: 8vw;
+      font-weight: 500;
     }
   
     .intro-tekst {
       font-family: "RobotoFlex";
-      font-size: 16px;
+      font-size: 1.1rem;
       font-weight: 300;
     }
-    .kontakt-container {
-        padding-bottom: 300px;
-      }
     
   }
   
