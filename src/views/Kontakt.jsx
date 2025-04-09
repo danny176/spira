@@ -1,6 +1,5 @@
 import { useState } from "react"
 import '../css-med-lille/kontakt.css'
-import SPIRALIKON from "../assets/spiramobile.svg";
 
 // Kontaktformular-komponent
 export default function ForwardChain() {
@@ -31,7 +30,6 @@ export default function ForwardChain() {
       {/* Indhold under h1: tekst til venstre, formular til højre */}
       <div className="kontakt-indhold">
         {/* Venstre side med introduktionstekst */}
-        <div className="kontakt-tekst-indhold">
         <div className="kontakt-tekst">
           <p className="intro-tekst">
             Vil du vide mere om os, eller har du nogle specifikke ønsker eller spørgsmål?<br />
@@ -39,10 +37,7 @@ export default function ForwardChain() {
             få lige netop dine ønsker opfyldt!
           </p>
         </div>
-        <div>
-          <img src={SPIRALIKON} alt="Spiral ikon" className="spiral-icon" />
-        </div>
-        </div>
+        
 
         {/* Højre side med kontaktformular */}
         <form className="kontakt-formular" onSubmit={handleSubmit}>
@@ -95,5 +90,6 @@ export default function ForwardChain() {
         </form>
       </div>
     </div>
+
   )
 }
