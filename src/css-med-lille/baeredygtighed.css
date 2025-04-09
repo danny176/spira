@@ -165,7 +165,7 @@
     .baeredygtighed-section {
         background-color: black;
         color: white;
-        padding: 7rem 0rem;
+        padding: 5vh 0rem 0rem 0rem;
       }
       
       .baeredygtighed-header {
@@ -211,6 +211,7 @@
       
       .spiral-icon {
         width: 40%;
+        margin-bottom: 5vh;
         animation: spinOnce 1s ease 0.5s forwards, spinLoop 20s linear 1.5s infinite;
         transform-origin: center center;
       }
@@ -240,8 +241,9 @@
       }
     
       .section-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
+        font-weight: 500;
       }
       
       .section-text,
@@ -287,26 +289,27 @@
         margin-top: 0.5rem;
         font-size: 0.85rem;
       }
-      
-      .kontakt-cta {
-        text-align: center;
-        font-size: 0.9rem;
-        color: #ccc;
+    
+      .mobilefirst {
+        font-family: "RobotoFlex";
+        font-size: 1.1rem;
+        margin-bottom: 5vh;
       }
-      
-      .kontakt-button {
-        margin-top: 1rem;
-        background-color: #d6e8d1;
-        color: black;
-        padding: 0.6rem 1.5rem;
-        border: none;
-        border-radius: 999px;
+    
+      .mobilefirst h2 {
+        margin-bottom: 2vh;
+        font-size: 1.8rem;
         font-weight: 500;
-        cursor: pointer;
-        transition: background-color 0.3s;
+      }
+    
+      .farve {
+        font-family: "RobotoFlex";
+        font-size: 1.1rem;
       }
       
-      .kontakt-button:hover {
-        background-color: #e5f0e1;
+      .farve h2 {
+        margin-bottom: 2vh;
+        font-size: 1.8rem;
+        font-weight: 500;
       }
     }
