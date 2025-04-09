@@ -13,14 +13,18 @@ export default function ForwardChain() {
   return <>
   
   {/* Den øverste sektion */}
+  <div className="hvem-er-forside">
  <p><span className="hvemer">Hvem er</span><span className="vi"> vi?</span></p>
  <p>Her kan du møde os bag Spira og se hvad vi hver især står for i udviklingsprocessen af dit nye website!</p>
+ </div>
 
 {/* vores værdier sektion */}
+<div className="værdier-sektion">
  <p className="veardier">Vores værdier</p>
  <p className="veardiertekst">Samarbejde: Vi udvikler webdesigns i tæt dialog med vores kunder. <br />
     Bæredygtighed: Vi går op i at skabe websites med mere omtanke for miljøet. <br />
     Brugervenlighed: Vi sætter altid brugeren i centrum.</p>
+    </div>
 
 {/* sektionen om os */}
 <p><span className="moed">Mød</span><span className="teamet"> teamet</span></p>

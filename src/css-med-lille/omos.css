@@ -31,10 +31,23 @@
     font-family: "SwearTextMedium";
 }
 
+.hvem-er-forside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 /*str på teksten - de to overskrifter*/
 .hvemer, .vi, .moed, .teamet {
     font-size: 8rem;
     padding-bottom: 2%;
+}
+
+.værdier-sektion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
 }
 
 /*padding og str på overskriften med vores værdier*/
