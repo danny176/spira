@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
 import "../css-med-lille/forside.css";
 import logoForside from "../assets/spiralogoforside.svg";
-import case1 from "../assets/case1.png";
-import case2 from "../assets/case2.png";
+import case1 from "../assets/case1.webp";
+import case2 from "../assets/case2.webp";
 import iconBranding from "../assets/iconBranding.svg";
 import iconDesign from "../assets/iconDesign.svg";
 import iconWebsupport from "../assets/iconWebsupport.svg";
