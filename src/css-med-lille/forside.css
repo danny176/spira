@@ -224,8 +224,8 @@
 
   .kontaktkomp {
     overflow: hidden;
-    margin-top: 30vh;
-    margin-bottom: 20vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -486,8 +486,7 @@
   }
 
   .kontaktkomp {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 12vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;

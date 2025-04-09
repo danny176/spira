@@ -85,6 +85,21 @@ export default function Baeredygtighed() {
         </div>
       </div>
 
+      <div className="farve-og-mobilefirst">
+        <div className="mobilefirst">
+          <h2>Mobil first</h2>
+          <p>I dag foregår størstedelen af alle visninger via smartphones, og derfor er       mobile first og responsivt webdesign afgørende. <br /> <br />
+            Ved at designe og kode med udgangspunkt i smartphones sikrer man både en god brugeroplevelse og optimeret performance. Kun nødvendige elementer loades på mobilen, mens ekstra indhold først tilføjes på større enheder som tablets og computere. <br /> <br />
+            Det gør siden hurtigere, mere brugervenlig og samtidig mere bæredygtig, da mindre data skal hentes – og dermed bruges der også mindre strøm.</p>
+        </div>
+        <div className="farve">
+        <h2>Farvevalg</h2>
+          <p>Farver har også betydning for klimaet – f.eks. kræver blå farver generelt mere energi at vise end grønne og røde, da de kræver mere lys. Dog afhænger strømforbruget også af skærmens lysstyrke, og nyere skærme er blevet mere energieffektive. <br /> <br />
+          At vælge energivenlige farver kan dog begrænse farvepaletten og udfordre visuelle identiteter, hvilket kan føre til mere ensartede design. <br /> <br />
+          Ved udvikling af klimavenlige websites kan man derfor med fordel vælge mørke farver, gråtoner samt grønne og røde nuancer fremfor lyse og energikrævende farver.</p>
+        </div>
+      </div>
+
       <Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}>
         <KontaktKnap />
       </Suspense>
