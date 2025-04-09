@@ -1,8 +1,12 @@
- import { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
+import Lottie from "lottie-react"
+
 import SPIRALIKON from "../assets/spiramobile.svg";
 import IPHONEJPEG from "../assets/iphonejpeg.jpeg";
 import IPHONEWEBP from "../assets/iphonewebp.webp";
 import "../css-med-lille/baeredygtighed.css";
+
+import MotionGrapic from "../assets/motion-grapics.json"
 
 const KontaktKnap = lazy(() => import("../components/kontakt"));
 
@@ -20,7 +24,12 @@ export default function Baeredygtighed() {
         </div>
       </div>
 
-      {/* Vidste du... */}
+      {/* Minimer dit digitale fodaftryk */}
+      <div className="lottieboks">
+        <div className="lottiefil">
+          <Lottie animationData={MotionGrapic} />
+        </div>
+
       <div className="vidste-du">
         <h3 className="section-title">Minimer dit digitale fodaftryk</h3>
         <p className="section-text">
@@ -32,6 +41,7 @@ export default function Baeredygtighed() {
           datamængder, optimere kode og vælge grønne servere – og dermed
           minimere det digitale fodaftryk.
         </p>
+      </div>
       </div>
 
       {/* Billedoptimering */}
