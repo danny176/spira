@@ -237,7 +237,6 @@ export default function Home() {
           end: "bottom bottom",
           scrub: 3,
           once: true,
-          markers: true,
         },
       }
     );

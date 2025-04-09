@@ -7,8 +7,8 @@ import Kontakt from "./views/Kontakt";
 import Baeredygtighed from "./views/Baeredygtighed";
 import Home from "./views/Home";
 
-const router = createBrowserRouter([
-  {
+const router = createBrowserRouter([ 
+  { 
     path: "/spira/",
     element: <Layout />,
     children: [

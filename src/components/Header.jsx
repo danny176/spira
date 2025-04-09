@@ -12,7 +12,7 @@ export default function Header() {
   // useEffect hook som kører, når URL'en ændres (fx når vi navigerer til en anden side)
   useEffect(() => {
     // Hvis vi er på forsiden ("/spira/"), skal vi sikre os at cursoren fjernes
-    if (location.pathname === "/spira/") {
+    if (location.pathname === "/spira/"  || location.pathname === "/spira/kontakt") {
       setActiveIndex(null); // Deselecter alle navigationselementer (cursor fjernes fra navbar)
     }
   }, [location]); // Denne useEffect kører hver gang URL'en ændres
