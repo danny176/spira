@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { lazy, Suspense } from "react";
 {/* css filen */}
 import "../css-med-lille/omos.css";
 {/* vores portrætter */}

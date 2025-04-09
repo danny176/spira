@@ -15,7 +15,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { lazy, Suspense } from "react";
 const KontaktKnap = lazy(() => import("../components/kontakt"));
 
-
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
 ScrollTrigger.normalizeScroll(true);
 
@@ -375,7 +374,7 @@ export default function Home() {
 
       <div className="overflowhiddencases">
         <div ref={caseContainer} className="casecontainer">
-          <img ref={casePic1} className="case1" src={case1} alt="case1" loading="lazy"/>
+          <img ref={casePic1} className="case1" src={case1} alt="case1" loading="lazy" />
           <div ref={textContainer1} className="textcasecontainer">
             <h2>Et personligt portfolio</h2>
             <p>
@@ -431,7 +430,7 @@ export default function Home() {
             <div ref={kort1} className="kort1">
               <div className="titelIcon">
                 <h3>Branding & Visuel Identitet</h3>
-                <img className="iconbrand" src={iconBranding} alt="brandicon" loading="lazy"/>
+                <img className="iconbrand" src={iconBranding} alt="brandicon" loading="lazy" />
               </div>
               <ul>
                 <li>Logo og branddesign</li>

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+ import { lazy, Suspense } from "react";
 import SPIRALIKON from "../assets/spiramobile.svg";
 import IPHONEJPEG from "../assets/iphonejpeg.jpeg";
 import IPHONEWEBP from "../assets/iphonewebp.webp";
