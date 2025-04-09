@@ -3,6 +3,7 @@ import SPIRALIKON from "../assets/spiramobile.svg";
 import IPHONEJPEG from "../assets/iphonejpeg.jpeg";
 import IPHONEWEBP from "../assets/iphonewebp.webp";
 import "../css-med-lille/baeredygtighed.css";
+import KontaktKnap from "../components/kontakt";
 
 export default function Baeredygtighed() {
   return (
@@ -69,12 +70,7 @@ export default function Baeredygtighed() {
         </div>
       </div>
 
-      {/* Kontakt CTA */}
-      <div className="kontakt-cta">
-        <p>Vil du vide mere om hvad vi tilbyder af mere bæredygtigt webdesign?</p>
-        <p>Du er velkommen til at kontakte os!</p>
-        <button className="kontakt-button">Kontakt</button>
-      </div>
+      <KontaktKnap/>
     </section> 
   )  
   }

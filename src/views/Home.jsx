@@ -11,6 +11,7 @@ import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Observer } from "gsap/Observer";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import KontaktKnap from "../components/kontakt";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
 ScrollTrigger.normalizeScroll(true);
@@ -477,15 +478,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="kontaktkomp">
-        <div ref={kontaktkomp} className="konktaktknapcont">
-        <h3>
-          Vil du vide mere om, hvad vi tilbyder, eller har du spørgsmål? <br /><br /> Du er
-          velkommen til at kontakt os!
-        </h3>
-        <a className="kontaktknapside" href="/spira/Kontakt">Kontakt</a>
-        </div>
-      </section>
+      <KontaktKnap/>
     </>
   );
 }

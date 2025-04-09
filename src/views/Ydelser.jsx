@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import SPIRALIKON from "../assets/spiramobile.svg";
 
+import SPIRALIKON from "../assets/spiramobile.svg";
 import ICONBAERE from "../assets/iconBaere.svg";
 import ICONBRANDING from "../assets/iconBranding.svg";
 import ICONDESIGN from "../assets/iconDesign.svg";
 import ICONWEBSUPPORT from "../assets/iconWebsupport.svg";
+
+import KontaktKnap from '../components/kontakt';
 
 import "../css-med-lille/ydelser.css";
 
@@ -111,13 +113,7 @@ export default function ForwardChain() {
               </div>
               </div>
             </div>
-
-            {/* Kontakt CTA */}
-      <div className="kontakt-cta">
-        <p>Vil du vide mere om hvad vi tilbyder af mere bæredygtigt webdesign?</p>
-        <p>Du er velkommen til at kontakte os!</p>
-        <button className="kontakt-button">Kontakt</button>
-      </div>
+    <KontaktKnap/>
   </section>
     
   )

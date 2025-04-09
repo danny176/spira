@@ -7,6 +7,8 @@ import MIK from "../assets/mikkelpor.svg";
 import VIK from "../assets/vikpor.svg";
 import MAR from "../assets/mariapor.svg";
 
+import KontaktKnap from "../components/kontakt";
+
 export default function ForwardChain() {
   return <>
   
@@ -50,5 +52,6 @@ export default function ForwardChain() {
     <p>Maria er vores content koordinator og har flere års erfaring med udvikling af content og design elementer.</p>
   </section>
 </section>
+<KontaktKnap/>
 </> 
 }
