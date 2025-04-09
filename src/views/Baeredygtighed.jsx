@@ -43,14 +43,9 @@ export default function Baeredygtighed() {
               En af de nemmeste måder at optimere din hjemmeside på, er at
               optimere dine billeder. Det bedste er at uploade billeder med en
               lille filstørrelse, som er tilpasset det brugte design.
-            </p>
-            <p>
-              Et godt eksempel er forskellen mellem filformater af billeder. Til
+              <br /><br />Et godt eksempel er forskellen mellem filformater af billeder. Til
               højre ses to billeder, hvor forskellen i filstørrelse er tydelig.
-              Det ene billede er et JPEG, og det andet er et WEBP.
-            </p>
-            <p>
-              Som det kan ses, er der næsten ingen forskel på de to billeder, så
+              Det ene billede er et JPEG, og det andet er et WEBP.               Som det kan ses, er der næsten ingen forskel på de to billeder, så
               hvorfor ikke bare bruge WEBP og på den måde gøre din hjemmeside
               mere bæredygtig?
             </p>
