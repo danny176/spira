@@ -36,6 +36,9 @@
     flex-wrap: wrap;
   }
   
+  .kontakt-tekst-indhold {
+    align-items: center;
+  }
   /* Venstre kolonne introtekst */
   .kontakt-tekst {
     flex: 1;
