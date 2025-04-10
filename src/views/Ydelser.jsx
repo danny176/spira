@@ -10,7 +10,7 @@ const KontaktKnap = lazy(() => import("../components/kontakt"));
 
 import "../css-med-lille/ydelser.css";
 
-export default function ForwardChain() {
+export default function Ydelser() {
   return (
     <section className="ydelse-section">
       {/* Overskrift + ikon */}
