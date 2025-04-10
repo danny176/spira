@@ -9,7 +9,7 @@ import Home from "./views/Home";
 
 const router = createBrowserRouter([ 
   { 
-    path: "/spira/",
+    path: "/",
     element: <Layout />,
     children: [
       {

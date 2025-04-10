@@ -141,6 +141,7 @@ export default function OmOs() {
     <>
       {/* Den øverste sektion */}
       <div className="hvem-er-forside">
+        <div className="columnrev">
         <p>
           <span className="hvemer">Hvem er</span>
           <span className="vi"> vi?</span>
@@ -151,6 +152,7 @@ export default function OmOs() {
           alt="LogoForside"
           loading="lazy"
         />
+        </div>
         <p className="underteksthver">
           Her kan du møde os bag Spira og se hvad vi hver især står for i
           udviklingsprocessen af dit nye website!

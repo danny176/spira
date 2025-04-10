@@ -161,6 +161,18 @@
     padding-bottom: 2%;
   }
 
+  .columnrev {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .logoForsideOmOs {
+    margin: 5vh 30vw;
+    width: 25vw;
+    animation: spinLoop 20s linear infinite;
+    transform-origin: center center;
+  }
+
   /* str af værdier overskriften*/
   .veardier {
     font-size: 2rem;

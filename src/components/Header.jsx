@@ -90,7 +90,7 @@ export default function Header() {
       <nav className={showNav ? "navBarVisible" : "navBarHidden"}>
         {/* Hvis showNav er true, vis navbaren, ellers skjul den */}
 
-        <Link to="/spira/">
+        <Link to="/">
           <img className="logoDesk" src={logo} alt="Logo" />{" "}
           {/* Desktop logo */}
           <img className="logoMobile" src={logoMobile} alt="LogoMobile" />{" "}

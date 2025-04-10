@@ -46,7 +46,7 @@ export default function KontaktKnap() {
           <br />
           Du er velkommen til at kontakte os!
         </h3>
-        <a className="kontaktknapside" href="/spira/Kontakt">
+        <a className="kontaktknapside" href="/Kontakt">
           Kontakt
         </a>
       </div>

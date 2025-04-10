@@ -1,7 +1,7 @@
 
   /* General styling */
   .kontakt-container {
-    padding-top: 10vh;
+    padding-top: 5vh;
     background-color: #000;
     color: white;
     margin: 0 auto;
@@ -118,7 +118,14 @@
     }
 
     .kontakt-container {
-        padding-bottom: 200px;
+        padding-bottom: 5vh;
+      }
+
+      .logoForsideKontakt {
+        margin-top: 5vh;
+        width: 25vw;
+        animation: spinLoop 20s linear infinite;
+        transform-origin: center center;
       }
   }
   
