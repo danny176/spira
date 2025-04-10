@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useEffect } from "react";
 import { lazy, Suspense } from "react";
 {
   /* css filen */
@@ -12,10 +12,131 @@ import DAN from "../assets/danielpor.svg";
 import MIK from "../assets/mikkelpor.svg";
 import VIK from "../assets/vikpor.svg";
 import MAR from "../assets/mariapor.svg";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Observer } from "gsap/Observer";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
+ScrollTrigger.normalizeScroll(true);
 
 const KontaktKnap = lazy(() => import("../components/kontakt"));
 
 export default function OmOs() {
+
+  const kort1 = useRef(null);
+  const kort2 = useRef(null);
+  const kort3 = useRef(null);
+  const kort4 = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      kort1.current, // The element we want to animate
+      {
+        // From (initial state)
+        rotation: -20, // Start at 180 degrees
+        opacity: 0, // Start with opacity 0
+        x: -500,
+        y: -50,
+      },
+      {
+        // To (final state)
+        x: 0,
+        y: 0,
+        rotation: 0, // End at 0 degrees (original position)
+        opacity: 1, // End with opacity 1 (fully visible)
+        scrollTrigger: {
+          trigger: kort1.current,
+          start: "top 90%",
+          end: "bottom bottom",
+          scrub: 3,
+          once: true,
+        },
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    gsap.fromTo(
+      kort2.current, // The element we want to animate
+      {
+        // From (initial state)
+        rotation: -20, // Start at 180 degrees
+        opacity: 0, // Start with opacity 0
+        x: -500,
+        y: 50,
+      },
+      {
+        // To (final state)
+        x: 0,
+        y: 0,
+        rotation: 0, // End at 0 degrees (original position)
+        opacity: 1, // End with opacity 1 (fully visible)
+        scrollTrigger: {
+          trigger: kort2.current,
+          start: "top 90%",
+          end: "bottom bottom",
+          scrub: 3,
+          once: true,
+        },
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    gsap.fromTo(
+      kort3.current, // The element we want to animate
+      {
+        // From (initial state)
+        rotation: 20, // Start at 180 degrees
+        opacity: 0, // Start with opacity 0
+        x: 500,
+        y: 50,
+      },
+      {
+        // To (final state)
+        x: 0,
+        y: 0,
+        rotation: 0, // End at 0 degrees (original position)
+        opacity: 1, // End with opacity 1 (fully visible)
+        scrollTrigger: {
+          trigger: kort1.current,
+          start: "top 90%",
+          end: "bottom bottom",
+          scrub: 3,
+          once: true,
+        },
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    gsap.fromTo(
+      kort4.current, // The element we want to animate
+      {
+        // From (initial state)
+        rotation: 20, // Start at 180 degrees
+        opacity: 0, // Start with opacity 0
+        x: 500,
+        y: 50,
+      },
+      {
+        // To (final state)
+        x: 0,
+        y: 0,
+        rotation: 0, // End at 0 degrees (original position)
+        opacity: 1, // End with opacity 1 (fully visible)
+        scrollTrigger: {
+          trigger: kort2.current,
+          start: "top 90%",
+          end: "bottom bottom",
+          scrub: 3,
+          once: true,
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       {/* Den øverste sektion */}
@@ -55,7 +176,7 @@ export default function OmOs() {
       </p>
 
       <section className="nret">
-        <section className="baggrundpor">
+        <section ref={kort1} className="baggrundpor">
           <img src={DAN} alt="portræt af Daniel" loading="lazy" />
           <h3 className="navn">Daniel</h3>
           <p>
@@ -64,7 +185,7 @@ export default function OmOs() {
           </p>
         </section>
 
-        <section className="baggrundpor">
+        <section ref={kort3} className="baggrundpor">
           <img src={MIK} alt="portræt af Mikkel" loading="lazy" />
           <h3 className="navn">Mikkel</h3>
           <p>
@@ -75,7 +196,7 @@ export default function OmOs() {
       </section>
 
       <section className="nrto">
-        <section className="baggrundpor">
+        <section ref={kort2} className="baggrundpor">
           <img src={VIK} alt="portræt af Viktoria" loading="lazy" />
           <h3 className="navn">Viktoria</h3>
           <p>
@@ -84,7 +205,7 @@ export default function OmOs() {
           </p>
         </section>
 
-        <section className="baggrundpor">
+        <section ref={kort4} className="baggrundpor">
           <img src={MAR} alt="portræt af Maria" loading="lazy" />
           <h3 className="navn">Maria</h3>
           <p>
