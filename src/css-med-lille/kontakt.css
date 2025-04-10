@@ -135,7 +135,8 @@
 
     .logoForsideKontakt {
       width: 15vw;
-      padding-top: 10vh;
+      animation: spinLoop 20s linear infinite;
+      transform-origin: center center;
     }
   
   

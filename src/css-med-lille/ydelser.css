@@ -40,6 +40,11 @@
         overflow: hidden;
         line-height: 1.5;
       }
+
+      .spiraldiv {
+        margin-left: 10vw;
+        padding-top: 7vh;
+      }
       
       .spiral-icon {
         width: 15vw;

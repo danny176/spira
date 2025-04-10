@@ -37,12 +37,14 @@ export default function Kontakt() {
            <br /> Du er mere end velkommen til at kontakte os, så vil vi gøre vores bedste for at
             få lige netop dine ønsker opfyldt!
           </p>
+          <div className="spiraldiv">
                   <img
                     className="logoForsideKontakt"
                     src={logoForside}
                     alt="LogoForside"
                     loading="lazy"
                   />
+                  </div>
         </div>
         
 

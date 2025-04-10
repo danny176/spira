@@ -33,6 +33,8 @@
     width: 15vw;
     position: absolute;
     right: 17vw;
+    animation: spinLoop 20s linear infinite;
+    transform-origin: center center;
   }
 
   /*swear fonten til "vi?" og "teamet"*/
