@@ -38,3 +38,5 @@ function App() {
 }
 
 export default App;
+
+// Fortæller hvilke sider der skal vises på hjemmesiden

@@ -13,7 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
 ScrollTrigger.normalizeScroll(true);
 
-import MotionGrapic from "../assets/motion-grapics.json";
+import MotionGrapic from "../assets/motion-grapics.json"; // den importerede lottiefil af animationen, som er blevet lavet om til json
 
 const KontaktKnap = lazy(() => import("../components/kontakt"));
 
@@ -160,7 +160,7 @@ export default function Baeredygtighed() {
         </div>
       </div>
 
-      <Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}>
+      <Suspense fallback={<div>Henter kontaktknap... Vent venligst</div>}> // hvis en langsom computer ikke kan loade billeder, så kommer der tekste med ...
         <KontaktKnap />
       </Suspense>
     </section>

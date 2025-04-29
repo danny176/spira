@@ -8,7 +8,7 @@ function Layout() {
     <>
       <ScrollTop />
       <Header />
-      <Outlet />
+      <Outlet /> *//Skal fortælle at der skal erstattes med child elementer 
       <Footer />
     </>
   );

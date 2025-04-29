@@ -54,7 +54,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Denne useEffect kører kun én gang, når komponenten første gang rendres
+  }, []); // Denne useEffect kører kun én gang, når komponenten første gang rendres<--------------------------------------------------------------
 
   // State til at styre positionen og størrelsen af den animerede cursor (den der følger links)
   const [position, setPosition] = useState({
